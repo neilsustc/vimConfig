@@ -1,5 +1,5 @@
 winpos 30 30
-set lines=35 columns=120
+set lines=36 columns=160
 colorscheme molokai
 set nu
 set go=
@@ -10,10 +10,24 @@ set clipboard+=unnamed
 set cmdheight=2
 set formatoptions=tcrqn
 set cindent
+
+" tab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set smarttab
-"set expandtab
+set expandtab
+
 set list
-set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$
+set listchars=tab:\|\ ,trail:.,extends:>,precedes:<
+
+" imap for (, [, {, <, ', "
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap [ []<Esc>i
+inoremap < <><Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+
+" auto-completion with <Tab>
+im <Tab> <C-P>
