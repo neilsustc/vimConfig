@@ -33,6 +33,7 @@ set t_Co=256
 winpos 30 30
 set lines=35 columns=120
 colorscheme molokai
+set cursorline
 set nu
 set go=
 set backspace=indent,eol,start
@@ -42,6 +43,7 @@ set clipboard+=unnamed
 "set cmdheight=2
 set formatoptions=tcrqn
 set cindent
+set hlsearch
 
 " ===================================================================================
 " tab
