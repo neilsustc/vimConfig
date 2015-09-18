@@ -68,7 +68,10 @@ nmap <silent> <leader>sv :so $MYVIMRC<cr>
 " When .vimrc is edited, reload it
 "-autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 " Disable highlight when <leader><cr> is pressed
-nmap <silent> <leader><cr> :noh<cr>
+nmap <silent> <leader>; :noh<cr>
+" %
+nmap <leader><space> %
+
 " ===================================================================================
 " tab
 
